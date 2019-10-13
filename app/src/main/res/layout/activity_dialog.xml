@@ -9,26 +9,25 @@
         tools:context=".view.activities.MainActivity">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:text="Hello,dialog activity!"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/button"
+        <fragment
+            android:id="@+id/dialog_fragment"
+            android:name="jp.sakony.android.samples.view.fragments.DialogShowFragment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="open dialog activity."
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.185" />
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintVertical_bias="0.178" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
